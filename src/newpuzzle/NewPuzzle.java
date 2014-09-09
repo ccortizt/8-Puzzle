@@ -24,8 +24,8 @@ public class NewPuzzle {
         Nodo inicio = new Nodo(913425786);
         Arbol arbol = new Arbol(inicio);               
         
-        arbol.busquedaAnchura();
-        //arbol.busquedaProfundidad();
+        //arbol.busquedaAnchura();
+        arbol.busquedaProfundidad();
         
     }
 }

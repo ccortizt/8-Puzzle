@@ -23,6 +23,7 @@ public class Nodo {
      * @return mapa
      */
     public int[] toArray(int key) {
+       
         int mapa[] = new int[9];
         int aux[] = new int[9];
         //
@@ -45,6 +46,7 @@ public class Nodo {
      * @return 
      */
     public String pintar(int[] tablero) {
+        
         String r = "";
         for (int i = 0; i < 9; i++) {
             r += tablero[i];
@@ -59,6 +61,7 @@ public class Nodo {
      * @return pos
      */
     public int getPos(int[] key) {
+       
         int pos = 0;
         for (int i = 0; i < 9; i++) {
             if (key[i] == 9) {
@@ -75,6 +78,7 @@ public class Nodo {
      */
     //Nodo.getPos();
     public int getPosVacia() {
+        System.out.println("fueusadogetposvacianodo");
         return this.getPos(this.toArray((Integer) getKey()));
     }
 
