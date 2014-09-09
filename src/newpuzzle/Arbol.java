@@ -184,127 +184,13 @@ public class Arbol {
 
         stack.push(actual);
         nuestroHash.put(actual.getKey(), actual);
-        while (actual.getKey() != 123456789 && !stack.empty()) {
+        /*while (actual.getKey() != 123456789 && !stack.empty()) {
             
         }
-        
-            
-        
+        */
+        System.out.println("not supported yet");
     }
-    
-    /**
-     * 
-     * @param nodo 
-     */
-    
-    /*
-    public void generarEstadosP(Nodo nodo) {
-        int posicion = nodo.getPos(nodo.toArray(nodo.getKey()));
-        System.out.println("posicion " + posicion);
-        if ((posicion + 3) < 9) {
-            int estado1 = nuevoEstado(this.toArray(nodo.getKey()), posicion, posicion + 3);
-            if(!nuestroHash.containsKey(estado1)){
-                System.out.println("insertando1: " + estado1);
-                Nodo n = new Nodo(estado1, nodo);
-
-                nuestroHash.put(n.getKey(),n);
-                //agrega el elemento en el top
-                stack.push(n);
-            }
-        }
-
-        if ((posicion - 1) >= 0 && (posicion - 1) != 2 && (posicion - 1) != 5) {
-            int estado1 = nuevoEstado(this.toArray(nodo.getKey()), posicion, posicion - 1);
-            if (!nuestroHash.containsKey(estado1)) {
-                System.out.println("insertando2: " + estado1);
-                Nodo n = new Nodo(estado1, nodo);
-
-                nuestroHash.put(n.getKey(),n);
-                //agrega el elemento en el top
-                stack.push(n);
-            }
-        }
-
-        if ((posicion - 3) >= 0) {
-            int estado1 = nuevoEstado(this.toArray(nodo.getKey()), posicion, posicion - 3);
-
-             if(!nuestroHash.containsKey(estado1)){
-                System.out.println("insertando3: " + estado1);
-                Nodo n = new Nodo(estado1, nodo);
-
-               nuestroHash.put(n.getKey(),n);
-                //agrega el elemento en el top
-                stack.push(n);
-            }
-        }
-
-        if ((posicion + 1) < 9 && (posicion + 1) != 3 && (posicion + 1) != 6) {
-            int estado1 = nuevoEstado(this.toArray(nodo.getKey()), posicion, posicion + 1);
-             if(!nuestroHash.containsKey(estado1)){
-                System.out.println("insertando4: " + estado1);
-                Nodo n = new Nodo(estado1, nodo);
-
-                nuestroHash.put(n.getKey(),n);
-                //agrega el elemento en el top
-                stack.push(n);
-            }
-        }
-    }
-
-    void generarEstadosD(Nodo nodo) {
-        int posicion = nodo.getPos(nodo.toArray(nodo.getKey()));
-        System.out.println("posicion " + posicion);
-        if ((posicion + 3) < 9) {
-            int estado1 = nuevoEstado(this.toArray(nodo.getKey()), posicion, posicion + 3);
-            if(!nuestroHash.containsKey(estado1)){
-                System.out.println("insertando1: " + estado1);
-                Nodo n = new Nodo(estado1, nodo);
-
-                nuestroHash.put(n.getKey(),n);
-                //agrega el elemento en el bottom
-                stack.insertElementAt(n, 0);
-
-            }
-        }
-
-        if ((posicion - 1) >= 0 && (posicion - 1) != 2 && (posicion - 1) != 5) {
-            int estado1 = nuevoEstado(this.toArray(nodo.getKey()), posicion, posicion - 1);
-             if(!nuestroHash.containsKey(estado1)){
-                System.out.println("insertando2: " + estado1);
-                Nodo n = new Nodo(estado1, nodo);
-
-               nuestroHash.put(n.getKey(),n);
-                //agrega el elemento en el bottom
-                stack.insertElementAt(n, 0);
-            }
-        }
-
-        if ((posicion - 3) >= 0) {
-            int estado1 = nuevoEstado(this.toArray(nodo.getKey()), posicion, posicion - 3);
-
-             if(!nuestroHash.containsKey(estado1)){
-                System.out.println("insertando3: " + estado1);
-                Nodo n = new Nodo(estado1, nodo);
-
-                nuestroHash.put(n.getKey(),n);
-                //agrega el elemento en el bottom
-                stack.insertElementAt(n, 0);
-            }
-        }
-
-        if ((posicion + 1) < 9 && (posicion + 1) != 3 && (posicion + 1) != 6) {
-            int estado1 = nuevoEstado(this.toArray(nodo.getKey()), posicion, posicion + 1);
-             if(!nuestroHash.containsKey(estado1)){
-                System.out.println("insertando4: " + estado1);
-                Nodo n = new Nodo(estado1, nodo);
-
-                nuestroHash.put(n.getKey(),n);
-                //agrega el elemento en el bottom
-                stack.insertElementAt(n, 0);
-            }
-        }
-    }
-*/
+ 
     private void printPila(Stack stack) {
         System.out.println("");
         System.out.println("Impresion pila");
