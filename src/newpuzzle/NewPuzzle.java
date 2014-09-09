@@ -18,14 +18,14 @@ public class NewPuzzle {
     public static void main(String[] args) {
         //aqui se hacen las pruebas
         System.out.println(" inicio ");
-        Stack res = new Stack();
+      
         //este//Nodo inicio = new Nodo(123459786);
                                
-        Nodo inicio = new Nodo(193425786);
+        Nodo inicio = new Nodo(913425786);
         Arbol arbol = new Arbol(inicio);               
         
         arbol.busquedaAnchura();
-            
+        //arbol.busquedaProfundidad();
         
     }
 }

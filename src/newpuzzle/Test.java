@@ -19,7 +19,7 @@ public class Test {
         //Nodo inicio = new Nodo(123459786);
         
         Nodo n = new Nodo(123459786);
-        System.out.println("pvacia: "+n.getPosVacia()+" "+n.getKey()+" "+n.pintar(n.toArray(n.getKey())));
+        //System.out.println(n.pintar(n.toArray()));
     }
     
 }
